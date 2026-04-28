@@ -1,1 +1,214 @@
-# harsu
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteos Harsua - Oficial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-mustard: #e1ad01; /* Mostaza */
+            --bg-light: #ffffff; /* Blanco */
+            --card-bg: #f9f9f9; /* Gris muy claro para contraste */
+            --text-main: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Header Estilo Premium */
+        .header { 
+            background: var(--primary-mustard); 
+            padding: 20px; 
+            border-bottom: 3px solid #b8860b;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo-container { 
+            width: 90px; height: 90px; 
+            margin: -45px auto 10px; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            border: 3px solid var(--bg-light);
+            background: #eee;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .main-content { padding: 15px; max-width: 500px; margin: auto; }
+
+        /* Banner de Precio */
+        .banner-promo { 
+            background: var(--primary-mustard); 
+            color: #fff; 
+            padding: 15px; 
+            font-weight: 900; 
+            margin: 10px auto; 
+            width: 90%; 
+            border-radius: 12px;
+            text-transform: uppercase;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
+        h1 { font-size: 28px; color: var(--primary-mustard); margin-top: 10px; text-transform: uppercase; font-weight: 800; }
+        
+        /* Sección de Premio */
+        .prize-card {
+            background: var(--card-bg);
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .prize-card::before {
+            content: "PREMIO";
+            position: absolute;
+            top: 10px; right: -20px;
+            background: #d9534f; color: white;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            font-size: 10px; font-weight: bold;
+        }
+
+        .section-title { 
+            font-size: 16px; font-weight: bold; color: var(--primary-mustard);
+            display: block; margin: 25px 0 10px; text-transform: uppercase; letter-spacing: 2px;
+        }
+
+        /* Pago Móvil */
+        .payment-card { 
+            background: var(--card-bg); 
+            padding: 20px; border-radius: 20px; 
+            margin: 10px auto; border: 1px solid #eee;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .copy-field { 
+            background: #ffffff; padding: 15px; border-radius: 12px; 
+            margin: 10px 0; cursor: pointer; display: flex; 
+            justify-content: space-between; align-items: center; 
+            border: 1px solid #ddd; transition: 0.3s;
+            color: #555;
+        }
+        .copy-field:active { background: #f0f0f0; transform: scale(0.98); }
+        .copy-field strong { color: var(--primary-mustard); }
+
+        /* Redes Sociales */
+        .social-box {
+            display: flex; justify-content: center; gap: 20px; margin: 20px 0;
+        }
+        .social-icon {
+            color: var(--primary-mustard); font-size: 24px; text-decoration: none;
+            background: white; width: 50px; height: 50px; 
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%; border: 1px solid var(--primary-mustard);
+            transition: 0.3s;
+        }
+        .social-icon:hover { background: var(--primary-mustard); color: white; }
+
+        /* Botón WhatsApp */
+        .btn-whatsapp { 
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            background: #25d366; color: white; padding: 18px; 
+            margin: 30px auto; border-radius: 15px; text-decoration: none; 
+            font-weight: bold; width: 95%; font-size: 16px; border: none; cursor: pointer;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .footer { margin-top: 50px; padding: 30px; font-size: 11px; color: #999; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2 style="margin:0; letter-spacing: 4px; font-weight: 900; color: white;">SORTEOS HARSUA</h2>
+    </div>
+
+    <div class="main-content">
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/100" alt="Logo" style="width: 100%;">
+        </div>
+
+        <div class="banner-promo">
+            COMPRA MÍNIMA: 2 TICKETS (1.440 Bs)
+        </div>
+
+        <h1>TU COMBO VACILADOR</h1>
+
+        <div class="prize-card">
+            <h3 style="margin:0; font-size: 24px; color: var(--primary-mustard);">TECHNO MARINE</h3>
+            <p style="margin:5px 0; color: #777;">Edición Especial - Blue Silver</p>
+            <div style="margin-top: 15px; border-top: 1px solid #ddd; padding-top: 15px;">
+                <span style="display:block;">Ticket: <strong style="font-size: 1.2em;">720 Bs ($1)</strong></span>
+                <span style="display:block; font-size: 0.9em; margin-top: 5px;">Lotería: <strong style="color:var(--primary-mustard)">SUPER GANA</strong></span>
+            </div>
+        </div>
+
+        <span class="section-title">DATOS DE PAGO (PAGO MÓVIL)</span>
+        <div class="payment-card">
+            <div class="copy-field" onclick="copyToClipboard('04125156062')">
+                <span><i class="fas fa-phone"></i> Tel: <strong>04125156062</strong></span>
+                <i class="far fa-copy"></i>
+            </div>
+            
+            <div class="copy-field" onclick="copyToClipboard('14757876')">
+                <span><i class="fas fa-id-card"></i> CI: <strong>14757876</strong></span>
+                <i class="far fa-copy"></i>
+            </div>
+            
+            <div class="copy-field" onclick="copyToClipboard('0178')">
+                <span><i class="fas fa-university"></i> Banco: <strong>B. Trabajadores (0178)</strong></span>
+                <i class="far fa-copy"></i>
+            </div>
+        </div>
+
+        <span class="section-title">REDES Y SOPORTE</span>
+        <div class="social-box">
+            <a href="https://instagram.com/harsua_gabriel" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/584125159062" class="social-icon"><i class="fas fa-headset"></i></a>
+        </div>
+        <p style="font-size: 13px; color: #777;">Siguenos para ver los resultados en vivo</p>
+
+        <button onclick="enviarWhatsApp()" class="btn-whatsapp">
+            <i class="fab fa-whatsapp" style="font-size: 24px;"></i> 
+            ENVIAR COMPROBANTE Y GENERAR NÚMERO
+        </button>
+    </div>
+
+    <div class="footer">
+        © 2026 SORTEOS HARSUA | CARACAS, VENEZUELA <br>
+        Juega con responsabilidad.
+    </div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                const alert = document.createElement("div");
+                alert.innerHTML = "¡Copiado con éxito!";
+                alert.style.cssText = "position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:var(--primary-mustard); color:#fff; padding:10px 25px; border-radius:30px; font-weight:bold; font-size:14px; z-index:1000; box-shadow: 0 4px 10px rgba(0,0,0,0.2);";
+                document.body.appendChild(alert);
+                setTimeout(() => alert.remove(), 2000);
+            });
+        }
+
+        function enviarWhatsApp() {
+            const randomNum = Math.floor(Math.random() * 201).toString().padStart(3, '0');
+            const tlf = "584125159062";
+            const msg = encodeURIComponent(`Hola Harsua, aquí está mi comprobante de pago por el Techno Marine. Mi número generado es el: ${randomNum}`);
+            
+            window.open(`https://wa.me/${tlf}?text=${msg}`, '_blank');
+        }
+    </script>
+</body>
+</html>
+
